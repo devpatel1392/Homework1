@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Conway's Game of Life</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            var row = prompt("Enter number of rows:");
+            var col = prompt("Enter number of columns: ");
+            
+            var dead = "white";
+            
+            function table() {
+                document.writeIn("<table width=\"100%\" id = \"table\" border=\"0\">\n");
+                for (i=0; i < row; i++) {
+                    document.writeIn("<tr>");
+                    for(j=0; j<col; j++) {
+                        document.writeIn("<td height=\"5px\" onclick =\"clicked(this)\" bgColor=\"" + dead + "\"> </td>");
+                    }
+                    document.writeIn("</tr");
+                }
+            }
+            
+        </script>
+        <h1>Conway's Game of Life</h1>
+    </body>
+</html>
